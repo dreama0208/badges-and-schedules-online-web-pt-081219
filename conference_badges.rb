@@ -9,7 +9,7 @@ def batch_badge_creator(array_name)
     }
 end
 
-def assign_rooms(speakers)
+def assign_rooms(array_name)
   each_with_index = 0
   speakers.collect { |x|
     each_with_index += 1
@@ -18,10 +18,10 @@ def assign_rooms(speakers)
 end
 
 def printer
-    batch_badge_creator.each { |x|
+    batch_badge_creator(array_name).each { |x|
       puts x
     }
-    assign_rooms.each { |x|
+    assign_rooms(array_name).each { |x|
       puts x
   }
 end
