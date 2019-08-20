@@ -22,7 +22,7 @@ def printer
     a.each { |x|
       puts x
     }
-    
+
     b = assign_rooms(array_name)
     b.each { |x|
       puts x
