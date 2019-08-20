@@ -11,7 +11,7 @@ end
 
 def assign_rooms(array_name)
   each_with_index = 0
-  speakers.collect { |x|
+  array_name.collect { |x|
     each_with_index += 1
     "Hello, #{x}! You'll be assigned to room #{each_with_index}!"
   }
