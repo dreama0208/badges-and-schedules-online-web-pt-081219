@@ -5,7 +5,7 @@ end
 
 def batch_badge_creator(array_name)
     array_name.collect { |x|
-      badge_maker(array_name[x])
+      badge_maker(x)
     }
 end
 
