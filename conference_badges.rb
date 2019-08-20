@@ -11,10 +11,12 @@ end
 
 def assign_rooms(speakers)
   each_with_index = 1
+  while each_with_index == 7
   speakers.collect { |x|
     "Hello, #{x}! You will be assigned to room #{each_with_index}!"
-    each_with_index += 1
   }
+  each_with_index += 1
+end
 end
 
 def printer
